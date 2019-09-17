@@ -1,0 +1,38 @@
+#row1, #row3 {
+    height: 10vh;
+}
+
+
+#row2 {
+    height: 80vh;
+}
+
+#black-box > h1 {
+    display: flex;
+justify-content: center;
+top: 50%;
+transform: translateY(-50%);    
+color: white;  
+position: relative;
+z-index: 10; 
+color: white; 
+
+
+}
+
+.col-md-3  {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#black-box {
+    width: 50vh;
+    height: 25vh;
+    background: black;
+    position: absolute;
+    top: 0%;
+    z-index: 9;
+
+}
