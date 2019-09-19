@@ -1,0 +1,127 @@
+@mixin bg-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin font-menu {
+    font-size: 1.5vw;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("cannabis-2150543_1280.jpg");
+    @include bg-img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    position: relative;
+}
+
+header {
+    font-size: 4vw;
+    background: black;
+    color: white;
+    padding: 0.1em 0.2em;
+}
+
+nav {
+    position: relative;
+
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        position: absolute;
+        top: 10vh;
+
+        @include font-menu;
+
+        li {
+            margin-bottom: 0.5em;
+
+        }
+    }
+}
+
+
+footer {
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+
+
+    ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+
+        li {
+            @include font-menu;
+
+        }
+    }
+
+
+}
+
+#right {
+
+
+    section {
+        height: 100%;
+        width: 40vw;
+        background: black;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+
+
+        div {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            bottom: 5%;
+
+
+
+            a {
+                @include font-menu;
+
+                color: white;
+                text-decoration: none;
+                margin-top: 1.5vw;
+                margin-left: 1.5vw;
+
+            }
+        }
+
+        #anna {
+            display: flex;
+            justify-content: flex-start;
+            
+
+         
+        }
+
+    }
+
+}
