@@ -27,11 +27,16 @@ body {
      grid-row-start: 2;
      grid-row-end: 5;
      background: black;
+     opacity: 0.8;
      color: white;
      display: grid;
      place-items: center;
      font-size: 4vw;
-}
+
+    }
+
+
+
 
 nav {
     grid-column-start: 2;
@@ -39,8 +44,7 @@ nav {
     grid-row-start: 8;
     grid-row-end: 12;
     background: transparent;
-    border: 2px solid black;
-     color: black;
+     color: red;
      display: grid;
      place-items: end start;
      
@@ -58,12 +62,13 @@ section {
     grid-row-start: 2;
     grid-row-end: 12;
     background: black;
+    opacity: 0.8;
     color: white;
 
      
 }
 
-#container > #artist-header {
+/* #container > #artist-header {
     grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 2;
@@ -73,7 +78,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
 
-}
+} */
 
 
 
@@ -83,7 +88,6 @@ aside {
     grid-row-start: 5;
     grid-row-end: 8;
     background: transparent;
-    border: 2px solid black;
      color: black;
   
 }
@@ -92,19 +96,24 @@ ul, li {
     list-style: none;
     padding: 0;
     text-decoration: none;
+    font-size: 1.3em;
 }
 
 /* ------------------------- General END */
 #container > nav > ul > li {
     margin-top: 2vh;
-    color: white;
+    color: black;
     font-size: 1.3vw;
 
 }
 
+#container > nav > ul > li  {
+    text-shadow: 0px 0px 15px lightblue;
+
+}
 
 #container > section > li {
-    margin: 14.5vw 2vw;
+    margin: 2vw 2vw; /* artist list position */
     color: white;
     font-size: 1.3vw;
 
