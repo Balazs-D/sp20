@@ -96,25 +96,30 @@ ul, li {
 
 /* ------------------------- General END */
 #container > nav > ul > li {
-    margin-top: 2vh;
+    margin-top: 2vw;
     color: white;
     font-size: 1.3vw;
 
 }
 
 
-#container > section > li {
+#container > section > ul {
     margin: 14.5vw 2vw;
     color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+}
+#container > section > ul > li {
+    margin-bottom: 1.5vh;
+    width: 40%;
     font-size: 1.3vw;
 
-
-}
-#container > section > li > ul {
-    margin-bottom: 1.5vw;
 }
 
-#container > section > li > ul:hover {
+#container > section > ul > li:hover {
     margin-bottom: 1.5vw;
     letter-spacing: 1vw;
     background: grey;
