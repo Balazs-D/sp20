@@ -181,6 +181,8 @@ footer {
     position: absolute;
     bottom: 0%;
 
+    display: none;
+
 
 
 
@@ -826,9 +828,7 @@ footer {
             margin-bottom: 7vw;
             position: relative;
 
-            &:hover {
-                background: rgba($color: orangered, $alpha: 0.5)
-            }
+            
 
 
             .release-pic>img {

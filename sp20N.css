@@ -80,6 +80,7 @@ footer {
   display: flex;
   position: absolute;
   bottom: 0%;
+  display: none;
 }
 footer ul {
   list-style: none;
@@ -515,9 +516,6 @@ footer ul li #shape3:hover {
   justify-content: center;
   margin-bottom: 7vw;
   position: relative;
-}
-.releases .release-list .release-item:hover {
-  background: rgba(255, 69, 0, 0.5);
 }
 .releases .release-list .release-item .release-pic > img {
   width: 10vw;
