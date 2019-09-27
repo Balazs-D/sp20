@@ -5,6 +5,7 @@
 
 @mixin primary-font {
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 @mixin font-menu {
@@ -83,7 +84,7 @@
 
 
 
-    
+
 
 
 body {
@@ -120,6 +121,7 @@ header {
     background: black;
     color: white;
     padding: 0.1em 0.2em;
+
 
     &:hover {
         cursor: url("tags/poiter-lin.png"), auto;
@@ -196,13 +198,13 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
 
 
 
         li {
             margin: 0vw 0vw;
-            
+
 
 
             i {
@@ -210,12 +212,12 @@ footer {
                 padding: 0.5vw;
                 color: white;
                 text-shadow: 0vw 0vw 3vw black;
-                
 
-                
+
+
             }
 
-           
+
 
             #shape1 {
 
@@ -224,17 +226,17 @@ footer {
                 transition: scale(0) .5s ease-in;
 
 
- 
+
 
                 &:hover {
 
-                transform: scale(1);
-                    
+                    transform: scale(1);
+
 
 
                 }
 
-               
+
             }
 
             #shape2 {
@@ -250,7 +252,7 @@ footer {
 
                 }
 
-               
+
             }
 
             #shape3 {
@@ -267,7 +269,7 @@ footer {
 
                 }
 
-               
+
             }
 
 
@@ -291,20 +293,24 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     opacity: 0.8;
 
-    padding: 2vw 2vw 5vw 2vw;
+
+    padding: 2vw 2vw 4vw 2vw;
+
+    background: rgb(158, 120, 152);
 
 
 
-    h3 {
+    .titel {
 
         margin-bottom: 1vw;
-        color: white;
+        color: red;
         font-size: 1.3vw;
         align-self: flex-start;
+
 
     }
 
@@ -316,30 +322,50 @@ footer {
         object-fit: cover;
     }
 
+    #iconset-cont {
+    color: white;
+    background: orange;
+    margin: 0;
+    height: 10%;
+    width: 60%;
+    bottom: 1%;
+    right: 8%;
+}
 
-
-    .nikk-profile {
+    .nikk-profile,
+    .pr {
         color: white;
         display: none;
         margin: 0;
-        height: 100%;
-        padding-bottom: 5vw;
+        height: 90%;
+        // padding: 0vw 1vw 5vw 1vw;
         border-bottom: 1px solid white;
+        position: absolute;
+        // display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        left: 0%;
+        top: 0%;
+        background: rgb(39, 39, 39);
 
 
-        h4  {
-            padding: 0.5vw 0vw 1vw 0vw;
-            font-size: 1.5vw;
+
+        h4 {
+        padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+        font-size: 1.5vw;
+        margin-top: 1vw;
         }
 
-            p {
-    height: 70%;
-    overflow: scroll;
-    text-align: justify;
+        p {
+            height: 58.5%;
+            overflow: scroll;
+            text-align: justify;
+            padding: 0vw 1.5vw 0vw 1.5vw;
+            margin-top: 1.5vw;
 
-}
+        }
 
- 
+
     }
 
     .a-selection {
@@ -360,6 +386,7 @@ footer {
         margin-left: -0.3vw;
         margin-top: 0vw;
         margin-bottom: 0vw;
+
 
 
 
@@ -483,6 +510,8 @@ footer {
         margin-top: -5vw;
         margin-left: 7vw;
 
+        // border: 2px solid green;
+
 
 
 
@@ -507,7 +536,7 @@ footer {
             transform: scale(0.9);
             overflow: hidden;
             z-index: 0;
-            
+
         }
 
 
@@ -563,7 +592,7 @@ footer {
 
 
 
-        
+
 
         &.profile {
             background: green;
@@ -574,411 +603,419 @@ footer {
 
 
 
-}
 
-.form {
-    height: 100%;
-    width: 40vw;
-    background: black;
-    opacity: 0.8;
-    display: flex;
-    justify-content: flex-end;
 
-    position: relative;
-    overflow: hidden;
-    color: black;
-    padding: 1vw;
 
-    .contact-text {
+    }
+
+    .form {
         height: 100%;
-        background: white;
-        padding: 1vw 0.4vw 1vw 1vw;
+        width: 40vw;
+        background: black;
+        opacity: 0.8;
+        display: flex;
+        justify-content: flex-end;
+
         position: relative;
+        overflow: hidden;
+        color: black;
+        padding: 1vw;
+
+        .contact-text {
+            height: 100%;
+            background: white;
+            padding: 1vw 0.4vw 1vw 1vw;
+            position: relative;
+
+            h3,
+            p {
+                background: black;
+                font-size: 1vw;
+            }
+
+            h3 {
+                padding: 6vw;
+                margin-bottom: 1vw;
+
+            }
+
+            .p {
+                height: 100%;
+                padding: 2vw;
+                font-weight: 400;
+                text-align: justify;
+                text-transform: uppercase;
+
+            }
+
+            .foto {
+                width: 100%;
+                height: 100%;
+                background: url("artist.png");
+                background-size: cover;
+                opacity: 1;
+                filter: grayscale(10%) contrast(150%) brightness(200%);
+
+                background-repeat: no-repeat;
+                background-position: center;
+
+                border: none;
+
+            }
+
+
+        }
+
+        div {
+            color: white;
+
+            background: white;
+            display: flex;
+            flex-direction: column;
+
+            width: 50%;
+            position: relative;
+
+            border: 2px solid white;
+            padding: 1vw 1vw 1vw 0.4vw;
+
+
+
+            ::placeholder,
+            input {
+
+                color: rgb(114, 114, 114);
+                font-style: italic;
+
+                @include primary-font;
+                font-size: 0.8vw;
+
+            }
+
+
+            input,
+            textarea,
+            input {
+
+                width: 100%;
+                margin-bottom: 0.3vw;
+                padding: 0.6vw;
+                border: 1px solid white;
+                background: black;
+                color: white;
+                font-style: normal;
+
+                text-transform: uppercase;
+
+                text-align: right;
+
+                &:focus {}
+            }
+
+            input[type="date"]::-webkit-inner-spin-button {
+                display: none;
+            }
+
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                color: white;
+
+            }
+
+            input[type="date"] {
+                font-size: 0.8vw;
+                color: rgb(114, 114, 114);
+
+
+            }
+
+            button {
+                border: none;
+                padding: 0.3vw 0vw;
+                color: white;
+                background: black;
+                font-weight: 500;
+                width: 100%;
+                height: 4vw;
+                margin-top: 5vw;
+
+
+                align-self: flex-end;
+
+                @include primary-font;
+                font-size: 1.5vw;
+
+            }
+        }
+
+
+
+
+
+    }
+
+    #events {
+        height: 100%;
+        width: 40vw;
+        background: black;
+        opacity: 0.8;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 2vw;
+        position: relative;
+
+        h3 {
+            margin-bottom: 1vw;
+        }
 
         h3,
         p {
-            background: black;
-            font-size: 1vw;
+            font-size: 1.2vw;
         }
 
-        h3 {
-            padding: 6vw;
-            margin-bottom: 1vw;
+        .event-list {
+            border-top: 0.1vw solid white;
+            border-bottom: 0.1vw solid white;
+            padding-top: 2vw;
+            height: 85%;
+            overflow: scroll;
 
-        }
 
-        .p {
-            height: 100%;
-            padding: 2vw;
-            font-weight: 400;
-            text-align: justify;
-            text-transform: uppercase;
+            &::-webkit-scrollbar-track {
+                background: transparent;
+            }
 
-        }
+            &::-webkit-scrollbar-thumb {
+                background: rgba($color: rgb(44, 44, 44), $alpha: 0.8);
+            }
 
-        .foto {
-            width: 100%;
-            height: 100%;
-            background: url("artist.png");
-            background-size: cover;
-            opacity: 1;
-            filter: grayscale(10%) contrast(150%) brightness(200%);
+            &::-webkit-scrollbar {
+                width: 12px;
+            }
 
-            background-repeat: no-repeat;
-            background-position: center;
-
-            border: none;
-
+            &::-webkit-scrollbar:horizontal {
+                display: none;
+            }
         }
 
 
-    }
-
-    div {
-        color: white;
-
-        background: white;
-        display: flex;
-        flex-direction: column;
-
-        width: 50%;
-        position: relative;
-
-        border: 2px solid white;
-        padding: 1vw 1vw 1vw 0.4vw;
-
-
-
-        ::placeholder,
-        input {
-
-            color: rgb(114, 114, 114);
-            font-style: italic;
-
-            @include primary-font;
-            font-size: 0.8vw;
-
-        }
-
-
-        input,
-        textarea,
-        input {
-
-            width: 100%;
-            margin-bottom: 0.3vw;
-            padding: 0.6vw;
-            border: 1px solid white;
-            background: black;
-            color: white;
-            font-style: normal;
-
-            text-transform: uppercase;
-
-            text-align: right;
-
-            &:focus {}
-        }
-
-        input[type="date"]::-webkit-inner-spin-button {
-            display: none;
-        }
-
-        input[type="date"]::-webkit-calendar-picker-indicator {
-            color: white;
-
-        }
-
-        input[type="date"] {
-            font-size: 0.8vw;
-            color: rgb(114, 114, 114);
-
-
-        }
-
-        button {
-            border: none;
-            padding: 0.3vw 0vw;
-            color: white;
-            background: black;
-            font-weight: 500;
-            width: 100%;
-            height: 4vw;
-            margin-top: 5vw;
-
-
-            align-self: flex-end;
-
-            @include primary-font;
-            font-size: 1.5vw;
-
-        }
-    }
-
-
-
-
-
-}
-
-#events {
-    height: 100%;
-    width: 40vw;
-    background: black;
-    opacity: 0.8;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    padding: 2vw;
-    position: relative;
-
-    h3 {
-        margin-bottom: 1vw;
-    }
-
-    h3,
-    p {
-        font-size: 1.2vw;
-    }
-
-    .event-list {
-        border-top: 0.1vw solid white;
-        border-bottom: 0.1vw solid white;
-        padding-top: 2vw;
-        height: 85%;
-        overflow: scroll;
-
-
-        &::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background: rgba($color: rgb(44, 44, 44), $alpha: 0.8);
-        }
-
-        &::-webkit-scrollbar {
-            width: 12px;
-        }
-
-        &::-webkit-scrollbar:horizontal {
-            display: none;
-        }
-    }
-
-
-    #event-item {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-bottom: 2vw;
-        padding-bottom: 0.5vw;
-        border-bottom-width: 0vw;
-        border-bottom-style: solid;
-        border-image-source:
-            linear-gradient(45deg,
-                rgba($color: grey, $alpha: 0.0),
-                rgba($color: grey, $alpha: 0.0),
-                rgba($color: white, $alpha: 1.0),
-                rgba($color: grey, $alpha: 0.0),
-                rgba($color: grey, $alpha: 0.0));
-        border-image-slice: 1;
-
-    }
-
-
-}
-
-.releases {
-
-    height: 100%;
-    width: 40vw;
-    background: black;
-    opacity: 0.8;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    padding: 2vw;
-    position: relative;
-
-    h3 {
-        margin-bottom: 1vw;
-    }
-
-    h3,
-    p {
-        font-size: 1.3vw;
-    }
-
-    .release-list {
-        border-top: 0.1vw solid white;
-        border-bottom: 0.1vw solid white;
-        padding-top: 2vw;
-        height: 85%;
-        overflow: scroll;
-        overflow: visible;
-
-        &::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background: rgba($color: rgb(44, 44, 44), $alpha: 0.8);
-        }
-
-        &::-webkit-scrollbar {
-            width: 12px;
-        }
-
-        &::-webkit-scrollbar:horizontal {
-            display: none;
-        }
-
-        .release-item {
-
+        #event-item {
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            margin-bottom: 0vw;
-            position: relative;
-            height: 12vw; 
+            justify-content: space-around;
             margin-bottom: 2vw;
-            transition: background-color .3s ease-in;
+            padding-bottom: 0.5vw;
+            border-bottom-width: 0vw;
+            border-bottom-style: solid;
+            border-image-source:
+                linear-gradient(45deg,
+                    rgba($color: grey, $alpha: 0.0),
+                    rgba($color: grey, $alpha: 0.0),
+                    rgba($color: white, $alpha: 1.0),
+                    rgba($color: grey, $alpha: 0.0),
+                    rgba($color: grey, $alpha: 0.0));
+            border-image-slice: 1;
 
-            &:hover {
-                background-color: rgba($color: green, $alpha: 0.7);
+        }
+
+
+    }
+
+    .releases {
+
+        height: 100%;
+        width: 40vw;
+        background: black;
+        opacity: 0.8;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 2vw;
+        position: relative;
+
+        h3 {
+            margin-bottom: 1vw;
+        }
+
+        h3,
+        p {
+            font-size: 1.3vw;
+        }
+
+        .release-list {
+            border-top: 0.1vw solid white;
+            border-bottom: 0.1vw solid white;
+            padding-top: 2vw;
+            height: 85%;
+            overflow: scroll;
+            overflow: visible;
+
+            &::-webkit-scrollbar-track {
+                background: transparent;
             }
 
-
-            
-
-
-            .release-pic>img {
-                width: 10vw;
-                height: 10vw;
-                background-size: cover;
-                background-repeat: no-repeat;
-                box-shadow: 0vw 0vw 3vw rgba($color: white, $alpha: 0.5);
-                border-radius: 50%;
-                position: absolute;
-                left: 9%;
-                top: 5%;
-
-
-
-
+            &::-webkit-scrollbar-thumb {
+                background: rgba($color: rgb(44, 44, 44), $alpha: 0.8);
             }
 
-            .release-pic #big-pic {
-                position: absolute;
-                left: 9%;
-                top: 5%;
-                z-index: 9;
-                box-shadow: 0vw 0vw 3vw rgba($color: black, $alpha: 0.5);
-                transition: 0.5s ease-in-out;
-                transform: scale(1) translate(0%, 0%);
-
-
-
-                &:hover {
-                    z-index: 11;
-                    transform: scale(1.3);
-
-                }
-
+            &::-webkit-scrollbar {
+                width: 12px;
             }
 
-
-
-            #mini-pic {
-                position: absolute;
-                width: 14%;
-                border-radius: 50%;
-                bottom: 15%;
-                left: 0%;
-                box-shadow: 2px 3px 4px rgba($color: grey, $alpha: 0.8);
-                position: absolute;
-                z-index: 10;
-                transition: 0.5s ease-in-out;
-
-                &:hover {
-                    z-index: 11;
-                    box-shadow: 3px 0px 6px rgba($color: grey, $alpha: 0.8);
-
-                    transform: scale(2.3) translate(30%, -10%);
-
-                }
+            &::-webkit-scrollbar:horizontal {
+                display: none;
             }
 
-
-
-
-
-            .release-details {
+            .release-item {
 
                 display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 0vw;
+                position: relative;
+                height: 12vw;
+                margin-bottom: 2vw;
+                transition: background-color .3s ease-in;
 
-                margin-left: 12vw;
+                &:hover {
+                    background-color: rgba($color: green, $alpha: 0.7);
+                }
 
 
 
-                .release-name {
-                    margin-bottom: 2vw;
 
 
-                    span {
-                        margin: 0vw 0.5vw;
+                .release-pic>img {
+                    width: 10vw;
+                    height: 10vw;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    box-shadow: 0vw 0vw 3vw rgba($color: white, $alpha: 0.5);
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 9%;
+                    top: 5%;
+
+
+
+
+                }
+
+                .release-pic #big-pic {
+                    position: absolute;
+                    left: 9%;
+                    top: 5%;
+                    z-index: 9;
+                    box-shadow: 0vw 0vw 3vw rgba($color: black, $alpha: 0.5);
+                    transition: 0.5s ease-in-out;
+                    transform: scale(1) translate(0%, 0%);
+
+
+
+                    &:hover {
+                        z-index: 11;
+                        transform: scale(1.3);
+
+                    }
+
+                }
+
+
+
+                #mini-pic {
+                    position: absolute;
+                    width: 14%;
+                    border-radius: 50%;
+                    bottom: 15%;
+                    left: 0%;
+                    box-shadow: 2px 3px 4px rgba($color: grey, $alpha: 0.8);
+                    position: absolute;
+                    z-index: 10;
+                    transition: 0.5s ease-in-out;
+
+                    &:hover {
+                        z-index: 11;
+                        box-shadow: 3px 0px 6px rgba($color: grey, $alpha: 0.8);
+
+                        transform: scale(2.3) translate(30%, -10%);
+
                     }
                 }
 
-                .tracklist {}
-
-                .tracklist>p {
-                    font-size: 1vw;
 
 
+
+
+                .release-details {
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+                    margin-left: 12vw;
+
+
+
+                    .release-name {
+                        margin-bottom: 2vw;
+
+
+                        span {
+                            margin: 0vw 0.5vw;
+                        }
+                    }
+
+                    .tracklist {}
+
+                    .tracklist>p {
+                        font-size: 1vw;
+
+
+                    }
                 }
+
             }
 
         }
-
     }
-}
 
 
 
 
 
 
-/* ------------- Additonal Styling ---------*/
+    /* ------------- Additonal Styling ---------*/
 
-.back, .vinyl-shop {
-    font-style: italic;
-    position: absolute;
-    bottom: 1.5vw;
-    font-size: 1vw;
-    color: white;
-    align-self: flex-start;
-    position: absolute;
-    transition: all .4s ease-in-out;
-    width: 0%;
-
-
-    
-
-    &:hover {
-        background: white;
-        color: black;
+    .back,
+    .vinyl-shop {
+        font-style: italic;
+        position: absolute;
+        bottom: 1.5vw;
+        font-size: 1vw;
+        color: white;
+        align-self: flex-start;
+        position: absolute;
+        transition: all .4s ease-in-out;
+        width: 0%;
         padding: 0vw 1vw 0vw 0vw;
-        width: 20%;
+        left: 3.5%;
 
+
+
+
+        &:hover {
+            background: white;
+            color: black;
+            padding: 0vw 1vw 0vw 1vw;
+            width: 9%;
+
+
+        }
+
+        &:active {
+            width: 40%;
+        }
     
-    }
-
-    &:active {
-        widht: 80%;
-    }
 }
+
