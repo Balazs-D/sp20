@@ -6,12 +6,6 @@
   font-weight: 600;
 }
 
-* p {
-  font-size: 1.2vw;
-  font-weight: 100;
-  color: #dadada;
-}
-
 body {
   width: 100vw;
   height: 100vh;
@@ -175,74 +169,11 @@ footer ul li #shape3:hover {
   position: relative;
   opacity: 0.8;
   padding: 2vw 2vw 4vw 2vw;
-  background: radial-gradient(black, #333233);
-}
-.artist .arrow-right {
-  color: transparent;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  transform: translateX(-50%);
-  right: 5%;
-  top: 60%;
-}
-.artist .arrow-left {
-  color: transparent;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  transform: translateX(-50%);
-  left: 8%;
-  top: 60%;
-}
-.artist .fas {
-  margin-bottom: 1vw;
-}
-.artist .one-arr {
-  animation: blink 3s infinite ease;
-}
-@keyframes blink {
-  33% {
-    color: grey;
-  }
-  66% {
-    color: transparent;
-  }
-  100% {
-    color: transparent;
-  }
-}
-.artist .two-arr {
-  animation: blinkk 3s infinite ease;
-}
-@keyframes blinkk {
-  33% {
-    color: transparent;
-  }
-  66% {
-    color: grey;
-  }
-  100% {
-    color: transparent;
-  }
-}
-.artist .three-arr {
-  animation: blinkkk 3s infinite ease;
-}
-@keyframes blinkkk {
-  33% {
-    color: transparent;
-  }
-  66% {
-    color: transparent;
-  }
-  100% {
-    color: grey;
-  }
+  background: radial-gradient(black, #9e7898);
 }
 .artist .titel {
   margin-bottom: 1vw;
-  color: white;
+  color: red;
   font-size: 1.3vw;
   align-self: flex-start;
 }
@@ -272,7 +203,7 @@ footer ul li #shape3:hover {
   align-content: space-between;
   left: 0%;
   top: 0%;
-  background: radial-gradient(#292929, black);
+  background: #272727;
 }
 .artist .nikk-profile h4,
 .artist .pr h4 {
@@ -380,6 +311,7 @@ footer ul li #shape3:hover {
   width: 50%;
   height: 40%;
   margin-top: -5vw;
+  margin-left: 0vw;
   overflow: visible;
   transition-property: scale(1);
   transition-duration: 0.5s;
@@ -400,29 +332,18 @@ footer ul li #shape3:hover {
 .artist .a-card svg {
   width: 100%;
   object-fit: fill;
+  stroke: black;
   stroke-width: 0vw;
   transition: all 0.5s cubic-bezier(0, 0.87, 1, 0.14);
-  z-index: 5;
 }
-.artist .a-card svg:hover path {
-  fill: pink;
+.artist .a-card svg:hover {
   stroke-width: 0.5vw;
-  stroke: black;
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
-  animation: dash 1s linear infinite;
 }
-@keyframes dash {
-  to {
-    stroke-dashoffset: 1000;
-  }
-}
+.artist .a-card svg .st0,
 .artist .a-card svg path {
-  fill: pink;
-  stroke-width: 0.5vw;
+  fill: white;
 }
-
-.profile {
+.artist .a-card .profile {
   position: absolute;
   background: green;
   width: 40vw;
@@ -430,16 +351,16 @@ footer ul li #shape3:hover {
   padding: 1.8vw;
   top: -30vw;
 }
-.profile h2 {
+.artist .a-card .profile h2 {
   font-size: 2vw;
   margin-bottom: 2vw;
 }
-.profile p {
+.artist .a-card .profile p {
   font-size: 1.2vw;
   font-weight: 100;
   text-align: justify;
 }
-.profile.profile {
+.artist .a-card.profile {
   background: green;
 }
 
@@ -547,7 +468,7 @@ footer ul li #shape3:hover {
 #events {
   height: 100%;
   width: 40vw;
-  background: radial-gradient(black, #333233);
+  background: black;
   opacity: 0.8;
   display: flex;
   flex-direction: column;
@@ -596,6 +517,7 @@ footer ul li #shape3:hover {
 .releases {
   height: 100%;
   width: 40vw;
+  background: black;
   opacity: 0.8;
   color: white;
   display: flex;
@@ -603,7 +525,6 @@ footer ul li #shape3:hover {
   color: white;
   padding: 2vw;
   position: relative;
-  background: radial-gradient(black, #333233);
 }
 .releases h3 {
   margin-bottom: 1vw;
@@ -635,20 +556,15 @@ footer ul li #shape3:hover {
 .releases .release-list .release-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  margin-bottom: 0vw;
   position: relative;
-  height: 14vw;
-  width: 100%;
+  height: 12vw;
+  margin-bottom: 2vw;
   transition: background-color 0.3s ease-in;
-  padding: 1vw;
 }
 .releases .release-list .release-item:hover {
-  border: 1px solid white;
-  background-color: #6b6b6b;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='60%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%236b6b6b'/%3E%3Cstop offset='1' stop-color='%232b2b2b'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='70%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%23545454' stroke-width='2' stroke-miterlimit='10' stroke-opacity='.5'%3E%3Ccircle cx='500' cy='500' r='725'/%3E%3Ccircle cx='500' cy='500' r='700'/%3E%3Ccircle cx='500' cy='500' r='675'/%3E%3Ccircle cx='500' cy='500' r='650'/%3E%3Ccircle cx='500' cy='500' r='625'/%3E%3Ccircle cx='500' cy='500' r='600'/%3E%3Ccircle cx='500' cy='500' r='575'/%3E%3Ccircle cx='500' cy='500' r='550'/%3E%3Ccircle cx='500' cy='500' r='525'/%3E%3Ccircle cx='500' cy='500' r='500'/%3E%3Ccircle cx='500' cy='500' r='475'/%3E%3Ccircle cx='500' cy='500' r='450'/%3E%3Ccircle cx='500' cy='500' r='425'/%3E%3Ccircle cx='500' cy='500' r='400'/%3E%3Ccircle cx='500' cy='500' r='375'/%3E%3Ccircle cx='500' cy='500' r='350'/%3E%3Ccircle cx='500' cy='500' r='325'/%3E%3Ccircle cx='500' cy='500' r='300'/%3E%3Ccircle cx='500' cy='500' r='275'/%3E%3Ccircle cx='500' cy='500' r='250'/%3E%3Ccircle cx='500' cy='500' r='225'/%3E%3Ccircle cx='500' cy='500' r='200'/%3E%3Ccircle cx='500' cy='500' r='175'/%3E%3Ccircle cx='500' cy='500' r='150'/%3E%3Ccircle cx='500' cy='500' r='125'/%3E%3Ccircle cx='500' cy='500' r='100'/%3E%3Ccircle cx='500' cy='500' r='75'/%3E%3Ccircle cx='500' cy='500' r='50'/%3E%3Ccircle cx='500' cy='500' r='25'/%3E%3C/g%3E%3Crect fill-opacity='.5' fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: rgba(0, 128, 0, 0.7);
 }
 .releases .release-list .release-item .release-pic > img {
   width: 10vw;
@@ -660,12 +576,11 @@ footer ul li #shape3:hover {
   position: absolute;
   left: 9%;
   top: 5%;
-  background: green;
 }
 .releases .release-list .release-item .release-pic #big-pic {
   position: absolute;
   left: 9%;
-  top: 7%;
+  top: 5%;
   z-index: 9;
   box-shadow: 0vw 0vw 3vw rgba(0, 0, 0, 0.5);
   transition: 0.5s ease-in-out;
@@ -680,7 +595,7 @@ footer ul li #shape3:hover {
   width: 14%;
   border-radius: 50%;
   bottom: 15%;
-  left: 4%;
+  left: 0%;
   box-shadow: 2px 3px 4px rgba(128, 128, 128, 0.8);
   position: absolute;
   z-index: 10;
@@ -695,9 +610,6 @@ footer ul li #shape3:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  position: absolute;
-  width: 60%;
-  left: 13%;
   margin-left: 12vw;
 }
 .releases .release-list .release-item .release-details .release-name {
@@ -708,7 +620,6 @@ footer ul li #shape3:hover {
 }
 .releases .release-list .release-item .release-details .tracklist > p {
   font-size: 1vw;
-  line-height: 1.5vw;
 }
 
 /* ------------- Additonal Styling ---------*/

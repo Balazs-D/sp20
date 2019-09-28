@@ -7,13 +7,13 @@ jQuery(document).ready(function () {
   //   $(".back").hide();
   // });
 
-  $(".a-card").mouseenter(function () {
-    $("path", this).css("fill", "yellow");
-  });
+  // $(".a-card").mouseenter(function () {
+  //   $(".circle").animate({opacity: "1", transform: "scale(0)"});
+  // });
 
-  $(".a-card").mouseleave(function () {
-    $("path", this).css("fill", "white");
-  });
+  // $(".a-card").mouseleave(function () {
+  //   $(".circle").animate({opacity: "0", transform: "scale(1)"});
+  // });
 
   $("#card-nikk").click(function () {
     $(".a-selection").hide();
