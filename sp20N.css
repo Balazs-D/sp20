@@ -15,9 +15,10 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: url("cannabis-2150543_1280.jpg");
+  background: url("bg3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
