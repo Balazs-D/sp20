@@ -94,7 +94,9 @@ background-size: cover;
 }
 
 
-
+@mixin link-cursor {
+    cursor: url("tags/pointer/jack-sh-p-white.png"), auto;
+}
 
 
 
@@ -102,7 +104,7 @@ background-size: cover;
 * {
     box-sizing: border-box;
     margin: 0px;
-    cursor: url("tags/pointerS.png"), auto;
+    cursor: url("tags/pointer/jack-sh-p.png"), auto;
 
     @include primary-font;
 }
@@ -131,7 +133,7 @@ body {
 header:hover,
 a[href]:hover,
 #logo:hover {
-    cursor: url("tags/poiter-lin.png"), auto;
+    @include link-cursor;
 
 }
 
@@ -150,6 +152,8 @@ header {
     background: black;
     color: white;
     padding: 0.1em 0.2em;
+    opacity: 0.9;
+    
 
 
     &:hover {
@@ -165,6 +169,7 @@ header {
 
 nav {
     position: relative;
+    opacity: 0.9;
 
 
     ul {
@@ -1049,6 +1054,7 @@ footer {
                 position: absolute;
                 width: 60%;
                 left: 13%;
+                z-index: 12;
                 // text-transform: uppercase;
 
 
@@ -1074,10 +1080,10 @@ footer {
 
                 .tracklist>p {
                     font-size: 1vw;
-
                     line-height: 1.5vw;
+                    width: 86%;
 
-
+ 
                 }
             }
 

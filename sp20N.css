@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0px;
-  cursor: url("tags/pointerS.png"), auto;
+  cursor: url("tags/pointer/jack-sh-p.png"), auto;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
@@ -27,7 +27,7 @@ body {
 header:hover,
 a[href]:hover,
 #logo:hover {
-  cursor: url("tags/poiter-lin.png"), auto;
+  cursor: url("tags/pointer/jack-sh-p-white.png"), auto;
 }
 
 #container {
@@ -44,6 +44,7 @@ header {
   background: black;
   color: white;
   padding: 0.1em 0.2em;
+  opacity: 0.9;
 }
 header:hover {
   cursor: url("tags/poiter-lin.png"), auto;
@@ -55,6 +56,7 @@ header a {
 
 nav {
   position: relative;
+  opacity: 0.9;
 }
 nav ul {
   list-style: none;
@@ -703,6 +705,7 @@ footer ul li #shape3:hover {
   position: absolute;
   width: 60%;
   left: 13%;
+  z-index: 12;
   margin-left: 12vw;
 }
 .releases .release-list .release-item .release-details .release-name {
@@ -719,6 +722,7 @@ footer ul li #shape3:hover {
 .releases .release-list .release-item .release-details .tracklist > p {
   font-size: 1vw;
   line-height: 1.5vw;
+  width: 86%;
 }
 
 /* ------------- Additonal Styling ---------*/
